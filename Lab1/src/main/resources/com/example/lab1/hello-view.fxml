@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="407.0" prefWidth="256.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab1.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="221.0" style="-fx-background-color: #483D8B;">
+      <children>
+         <AnchorPane focusTraversable="true" prefHeight="81.0" prefWidth="221.0" style="-fx-background-color: #62639B;">
+            <children>
+               <Text fill="WHITE" layoutX="22.0" layoutY="37.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Счётчик символов" textAlignment="CENTER" wrappingWidth="176.50262451171875">
+                  <font>
+                     <Font name="Cascadia Code Regular" size="20.0" />
+                  </font>
+               </Text>
+            </children>
+         </AnchorPane>
+         <TextField id="inputField" fx:id="inputField" layoutX="20.0" layoutY="148.0" prefHeight="29.0" prefWidth="177.0" promptText="ссылка на файл">
+            <font>
+               <Font name="Cascadia Code Regular" size="16.0" />
+            </font>
+         </TextField>
+         <Button id="Button" fx:id="button" layoutX="21.0" layoutY="193.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="177.0" text="посчитать" textAlignment="CENTER">
+            <font>
+               <Font name="Cascadia Code Regular" size="12.0" />
+            </font>
+         </Button>
+         <Text fill="WHITE" layoutX="20.0" layoutY="259.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="КОЛИЧЕСТВО" textAlignment="CENTER" wrappingWidth="176.50262451171875">
+            <font>
+               <Font name="Cascadia Code Regular" size="15.0" />
+            </font>
+         </Text>
+         <TextField id="outputField" fx:id="outputField" editable="false" layoutX="22.0" layoutY="277.0" prefHeight="29.0" prefWidth="177.0" promptText="здесь будет количество">
+            <font>
+               <Font name="Cascadia Code Regular" size="12.0" />
+            </font>
+         </TextField>
+      </children>
+   </AnchorPane>
+</VBox>
